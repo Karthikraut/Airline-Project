@@ -10,8 +10,7 @@ const userSchema = new mongoose.Schema({
         unique: true
     },
     phoneNumber: {
-        type: Number,
-        required: true
+        type: Number
     },
     password:{
         type:String,
@@ -24,7 +23,8 @@ const userSchema = new mongoose.Schema({
     },
     status:{
         type: String,
-        enum: ['active','blocked','deleted']
+        enum: ['active','blocked','deleted'],
+        default: 'active'
     }
 
 },{timestamps:true})
