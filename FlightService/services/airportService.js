@@ -4,7 +4,7 @@ const airportRepository = new AirportRepository();
 
 export async function createAirport(data) {
   try {
-    return await airportRepository.create(data);
+    return await airportRepository.createAirport(data);
   } catch (error) {
     throw new Error("Failed to create airport: " + error.message);
   }
