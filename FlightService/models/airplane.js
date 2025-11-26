@@ -19,4 +19,4 @@ airplaneSchema.virtual("flights", {
   foreignField: "airplaneId"
 });
 
-module.exports = mongoose.model("Airplane", airplaneSchema);
+export default mongoose.model("Airplane", airplaneSchema);

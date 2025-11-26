@@ -41,3 +41,10 @@ export async function updateAirport(id, data) {
     throw new Error("Failed to update airport: " + error.message);
   }
 }
+export default {
+  createAirport,
+  getAirports,
+  getAirport,
+  destroyAirport,
+  updateAirport
+};

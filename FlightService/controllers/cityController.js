@@ -1,9 +1,11 @@
-import { CityService } from "../services/cityService.js";
+import  CityService  from "../services/cityService.js";
 
 export async function createCity(req, res) {
   try {
     const city = await CityService.createCity({
-      name: req.body.name,
+      city: req.body.city,
+      state: req.body.state,
+      country: req.body.country
     });
 
     return res.status(201).json({

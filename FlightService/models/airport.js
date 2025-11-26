@@ -22,5 +22,4 @@ airportSchema.virtual("arrivingFlights", {
     localField: "_id",
     foreignField: "arrivalAirportId"
 });
-
-module.exports = mongoose.model("Airport", airportSchema);
+export default mongoose.model("Airport", airportSchema);

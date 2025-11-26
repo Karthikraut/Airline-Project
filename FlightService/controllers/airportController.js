@@ -1,4 +1,4 @@
-import { AirportService } from "../services/airportService.js";
+import AirportService  from "../services/airportService.js";
 
 export async function createAirport(req, res) {
   try {

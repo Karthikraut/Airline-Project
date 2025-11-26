@@ -10,13 +10,11 @@ const citySchema = new mongoose.Schema({
   state:{
     type: String,
     required: true,
-    unique: true,
     trim: true,
   },
   country: {
     type: String,
     required: true,
-    unique: true,
     trim: true,
   }
 }, { timestamps: true });
@@ -27,4 +25,4 @@ citySchema.virtual("airports", {
   foreignField: "cityId"
 });
 
-module.exports = mongoose.model("City", citySchema);
+export default mongoose.model("City", citySchema);

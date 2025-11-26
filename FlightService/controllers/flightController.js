@@ -1,4 +1,4 @@
-import { FlightService } from "../services/flightService.js";
+import FlightService  from "../services/flightService.js";
 
 export async function createFlight(req, res) {
   try {
@@ -92,4 +92,12 @@ export async function destroyFlight(req, res) {
       error: error.message,
     });
   }
+}
+
+export default {
+  createFlight,
+  getAllFlights,
+  getFlight,
+  updateSeats,
+  destroyFlight
 }

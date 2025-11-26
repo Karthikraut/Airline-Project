@@ -41,3 +41,11 @@ export async function updateAirplane(id, data) {
     throw new Error("Failed to update airplane: " + error.message);
   }
 }
+
+export default {
+  createAirplane,
+  getAirplanes,
+  getAirplane,
+  destroyAirplane,
+  updateAirplane
+};

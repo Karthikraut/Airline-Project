@@ -1,4 +1,4 @@
-import { AirplaneService } from "../services/index.js";
+import  AirplaneService  from "../services/airplaneService.js";
 
 // POST /airplanes
 export async function createAirplane(req, res) {

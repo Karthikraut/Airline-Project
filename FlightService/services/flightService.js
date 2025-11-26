@@ -101,3 +101,12 @@ export async function destroyFlight(id) {
     throw new Error("Failed to delete flight: " + error.message);
   }
 }
+
+
+export default {
+  createFlight,
+  getAllFlights,
+  getFlight,
+  updateSeats,
+  destroyFlight
+};
