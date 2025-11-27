@@ -13,10 +13,6 @@ export async function createFlight(data) {
   }
 }
 
-/**
- * Get all flights with optional filters and sorting
- * query = { trips: "departureId-arrivalId", price: "min-max", travellers, tripDate, sort: "departureTime_ASC,price_DESC" }
- */
 export async function getAllFlights(query = {}) {
   const customFilter = {};
   let sortFilter = {};

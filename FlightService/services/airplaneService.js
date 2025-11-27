@@ -4,7 +4,7 @@ const airplaneRepository = new AirplaneRepository();
 
 export async function createAirplane(data) {
   try {
-    return await airplaneRepository.create(data);
+    return await airplaneRepository.createAirplane(data);
   } catch (error) {
     throw new Error("Failed to create airplane: " + error.message);
   }
